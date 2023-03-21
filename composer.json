@@ -1,0 +1,48 @@
+{
+    "name": "jacques/omnipay-adumoonline",
+    "description": "Adumo Online (formerly Wirecard / MyGate) payment gateway driver for the Omnipay library",
+    "keywords": [
+        "omnipay",
+        "adumoonline",
+        "wirecard",
+        "mygate"
+    ],
+    "homepage": "https://github.com/jacques/omnipay-adumoonline",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jacques Marneweck",
+            "email": "jacques@siberia.co.za",
+            "homepage": "http://www.siberia.co.za/"
+        }
+    ],
+    "require": {
+        "omnipay/common": "v3.1"
+    },
+    "require-dev": {
+        "omnipay/tests": "~3.0",
+        "squizlabs/php_codesniffer": "^3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Skeleton\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "League\\Skeleton\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 src/",
+        "fix-style": "phpcbf -p --standard=PSR2 src/"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
